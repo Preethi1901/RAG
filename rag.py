@@ -48,7 +48,7 @@ rag_chain_with_print=({'context':retriever | format_docs,'question':RunnablePass
            | model
            | StrOutputParser()
            )
-rag_chain.invoke("are the recordings of the course available?")
+rag_chain_with_print.invoke("are the recordings of the course available?")
 
 #https://smith.langchain.com/hub/rlm/rag-prompt
 #print(chunks[0])
