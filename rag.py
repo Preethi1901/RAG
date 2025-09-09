@@ -52,6 +52,7 @@ rag_chain_with_print=({'context':retriever | format_docs,'question':RunnablePass
 )
 result= rag_chain_with_print.invoke("are the recordings of the course available?")
 print(result)
+
 #https://smith.langchain.com/hub/rlm/rag-prompt
 #print(chunks[0])
 print(len(chunks))
