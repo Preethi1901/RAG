@@ -47,7 +47,7 @@ rag_chain_with_print=({'context':retriever | format_docs,'question':RunnablePass
            | RunnableLamda(print_prompt)
            | model
            | StrOutputParser()
-           )
+)
 rag_chain_with_print.invoke("are the recordings of the course available?")
 
 #https://smith.langchain.com/hub/rlm/rag-prompt
